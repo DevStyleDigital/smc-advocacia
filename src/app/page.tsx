@@ -18,7 +18,6 @@ import { cn } from "utils/cn";
 import { Depoiments } from "./depoiments";
 import { Galleria } from "./galleria";
 import { SendMailForm } from "./send-mail-form";
-import Script from "next/script";
 
 const Home = () => {
 	return (
@@ -206,16 +205,18 @@ const Home = () => {
 			</section>
 
 			<section className="py-20 px-4">
-				<div className="p-[44%_0_0_0] relative max-w-screen-xl mx-auto h-fit">
-					<iframe
-						src="https://player.vimeo.com/video/907864216?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-						frameBorder="0"
-						allow="autoplay; fullscreen; picture-in-picture"
-						className="absolute top-0 left-0 w-full h-full rounded-lg overflow-hidden"
-						title="video"
-					/>
-				</div>
-				<Script src="https://player.vimeo.com/api/player.js" />
+				<video
+					width="320"
+					height="240"
+					controls
+					preload="none"
+					poster="/video/video-banner.jpg"
+					muted={false}
+					className="max-w-screen-xl mx-auto w-full"
+				>
+					<source src="/video/video.mp4" type="video/mp4" />
+					Seu navegador não suporta videos.
+				</video>
 			</section>
 
 			<Depoiments />
