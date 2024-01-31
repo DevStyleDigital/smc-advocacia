@@ -29,10 +29,10 @@ const Home = () => {
 				<div className="max-w-screen-xl w-full h-screen min-h-[inherit] flex px-4 max-md:text-center items-center mx-auto relative z-10 text-white">
 					<div className="w-full max-w-2xl space-y-8 flex flex-col max-md:items-center max-sm:pt-22">
 						<Vector className="max-md:hidden" />
-						<Vector variant="full" className="md:hidden" />
 						<h1 className="max-[300px]:break-all max-sm:opacity-0">
 							Sabrina M. Cunha Advogados Associados
 						</h1>
+						<Vector variant="full" className="md:hidden" />
 						<p>
 							Somos uma advocacia totalmente diferenciada, focada no atendimento
 							humanizado e sistêmico onde a resolução de qualquer tipo de
@@ -214,7 +214,10 @@ const Home = () => {
 					muted={false}
 					className="max-w-screen-xl mx-auto w-full"
 				>
-					<source src="/video/video.mp4" type="video/mp4" />
+					<source
+						src="https://rr4---sn-bg0eznle.c.drive.google.com/videoplayback?expire=1706681070&ei=vri5ZefaEbeBy_sPwOCE8AM&ip=2804:2618:401b:e600:2496:e2b8:af14:83c5&id=e2a1322fb9208b35&itag=37&source=webdrive&requiressl=yes&xpc=EghonaK1InoBAQ==&mh=yS&mm=32,29&mn=sn-bg0eznle,sn-bg0s7n7z&ms=su,rdu&mv=m&mvi=4&pl=34&sc=yes&ttl=transient&susc=dr&driveid=1Uxtg6B8IemWqeuo1R68UxWnSinyssas6&app=explorer&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&prv=1&dur=61.509&lmt=1706670267515689&mt=1706669793&fvip=5&subapp=DRIVE_WEB_FILE_VIEWER&txp=0001224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AJfQdSswRQIhAKaRXQ3i9RHbsydXqPv6rX-s9oc3JlM3l5wmf843bfyPAiAuPU3O78_8AeKYTWm3c6xWzS9orLALuVwYwjPXRWd32A==&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AAO5W4owRQIgWaNFPnyCLJl1SiLi3M8-MDbxd6u0JCbHMTvoWk96haECIQCcFcOcSBnr4MukK-EFHnbYmdli3UjJzw5WCJzOtj_dPA==&cpn=wYhUlAtkpR6w3yMg&c=WEB_EMBEDDED_PLAYER&cver=1.20240128.00.00"
+						type="video/mp4"
+					/>
 					Seu navegador não suporta videos.
 				</video>
 			</section>
