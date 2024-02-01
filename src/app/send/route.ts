@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
 		const res = await mail.transporter
 			.sendMail({
-				to: "cunha-advocacia@adv.oabsp.org.brm",
+				to: "cunha-advocacia@hotmail.com",
 				from: { name: "Contato do Site", address: process.env.MAIL || "" },
 				replyTo: data.email,
 				subject: `${subject}`,
