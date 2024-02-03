@@ -38,8 +38,6 @@ export const metadata: Metadata = {
 		"Somos uma advocacia totalmente diferenciada, focada no ATENDIMENTO HUMANIZADO E SISTÊMICO onde a resolução de qualquer tipo de conflito é nossa especialidade, principalmente na área Previdenciária, Direito Civil, Direito do Consumidor e Assessoria Jurídica.",
 };
 
-export const GTM_ID = process.env.NEXT_PUBLIC_GTM;
-
 const Logo = (
 	<Link
 		href="/"
@@ -56,17 +54,14 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="pt-BR">
 			<head>
-				<Script
-					id="gtm-script"
-					strategy="afterInteractive"
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=AW-11468126745"
+				/>
+				<script
 					dangerouslySetInnerHTML={{
-						__html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer', '${GTM_ID}');
-            `,
+						__html:
+							"window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-11468126745');",
 					}}
 				/>
 			</head>
@@ -249,15 +244,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 						</div>
 					</section>
 				</footer>
-				<noscript>
-					<iframe
-						src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-						height="0"
-						width="0"
-						title=" "
-						style={{ display: "none", visibility: "hidden" }}
-					/>
-				</noscript>
 				<Toast />
 			</body>
 		</html>
