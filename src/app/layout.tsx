@@ -54,11 +54,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="pt-BR">
 			<head>
-				<script
+				<Script
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=AW-11468126745"
 				/>
-				<script
+				<Script
 					dangerouslySetInnerHTML={{
 						__html:
 							"window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-11468126745');",
